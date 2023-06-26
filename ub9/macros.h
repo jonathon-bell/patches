@@ -1,4 +1,4 @@
-//**************************** Copyright © Jonathon Bell. All rights reserved.
+//****************** Copyright © 2016-2023 Jonathon Bell. All rights reserved.
 //*
 //*
 //*  Version : $Header:$
@@ -8,9 +8,9 @@
 //*
 //*
 //*  Comments: This file uses a tab size of 3 spaces.
-//*
-//*
-//****************************************************************************
+//*                                                                     0-0
+//*                                                                   (| v |)
+//**********************************************************************w*w***
 
 #ifndef  no_macros
 #define  no_macros
