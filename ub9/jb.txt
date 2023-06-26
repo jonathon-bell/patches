@@ -1,4 +1,4 @@
-//**************************** Copyright © Jonathon Bell. All rights reserved.
+//****************** Copyright © 2016-2023 Jonathon Bell. All rights reserved.
 //*
 //*
 //*  Version : $Header:$
@@ -11,11 +11,9 @@
 //*            A := Ibanez      [A]rtist
 //*            S := Steinberger [S]pirit
 //*            H := Carvin      [H]H2X
-//*
-//*  Comments: This file uses a tab size of 3 spaces.
-//*
-//*
-//****************************************************************************
+//*                                                                     0-0
+//*                                                                   (| v |)
+//**********************************************************************w*w***
 
 #include "ah.h"
 #include "jb.h"
