@@ -6,8 +6,6 @@
 //*
 //*  Purpose : These macros define the basic effects from which the 'jb' patch
 //*            library is constructed.
-//*
-//*  Comments: This file uses a tab size of 2 spaces.
 //*                                                                     0-0
 //*                                                                   (| v |)
 //**********************************************************************w*w***

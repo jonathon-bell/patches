@@ -5,9 +5,6 @@
 //*
 //*
 //*  Purpose : Defines various macros to facilitate writing patch files.
-//*
-//*
-//*  Comments: This file uses a tab size of 2 spaces.
 //*                                                                     0-0
 //*                                                                   (| v |)
 //**********************************************************************w*w***
