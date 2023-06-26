@@ -9,16 +9,13 @@
 //*
 //*  See Also: The Yamaha UD Stomp Patch List, a PDF file that enumerates the
 //*            parameter values for the preset patches found on the UD Stomp.
-//*
-//*
-//*  Comments: This file uses a tab size of 2 spaces.
 //*                                                                     0-0
 //*                                                                   (| v |)
 //**********************************************************************w*w***
 #pragma once
 //****************************************************************************
 
-#include "macros.h"                                      // For macro Voice()
+#include "macros.h"                                      // For Voice macro
 
 //****************************************************************************
 
