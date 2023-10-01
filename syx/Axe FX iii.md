@@ -1,3 +1,6 @@
+# Version 2
+# October 11th 2023
+
 # 🟠 Channels
 
 ## 🟠 **Amp:** Carvin - Recto1 Orange Normal _(FW: 22.00)_
@@ -35,7 +38,7 @@
 | .                                        |
 | Level            | -12.0 dB              |
 
-## 🟠 **Chorus:** Stere Tri-Chorus _(FW: 22.00)_
+## 🟠 **Chorus:** Stereo Tri-Chorus _(FW: 22.00)_
 
 | Parameter        | Value                 |
 |------------------|-----------------------|
