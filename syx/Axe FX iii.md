@@ -95,13 +95,14 @@
 |------------------|-----------------------|
 | Output Level     | 4.00 dB               |
 
-## 🟠 **Looper:** Looper _(FW: 22.00)_
+## 🟠 **Looper:** Looper _(FW: 22.01)_
 
 | Parameter        | Value                 |
 |------------------|-----------------------|
 | Playback         | -6.00 dB              |
 | Overdub          | -6.00 dB              |
 | Record Threshold | -40.0 dB              |
+| Crossfade        | On                    |
 | Loop Quantize    | On                    |
 | Record 2nd Press | Play                  |
 
