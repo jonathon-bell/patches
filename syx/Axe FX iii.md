@@ -342,9 +342,9 @@
 | Row | Column 1  | Column 2  | Column 3  | Column 4  | Column 5  |
 |-----|-----------|-----------|-----------|-----------|-----------|
 | 1   | Lead:     |           |           |           |           |
-|     | Gain      | Depth     | Master    | Metronome | Tempo     |
+|     | Gain      | Depth     | Master    | Tempo     | Metronome |
 | 2   | Clean:    |           |           |           |           |
-|     | Gain      |           | Master    | Looper    | Freezer   |
+|     | Gain      |           | Master    | Freezer   | Looper    |
 
 # 🟢 Layouts
 
