@@ -1,6 +1,9 @@
+# Version 2
+# October 11th 2023
+
 # 🟠 Channels
 
-## 🟠 **Amp:** Carvin - Recto1 Orange Normal _(FW: 22.00)_
+## 🟠 **Amp:** Carvin - Recto1 Orange Normal _(FW: 22.01)_
 
 | Parameter        | Value                 |
 |------------------|-----------------------|
@@ -16,9 +19,9 @@
 | Master           |   3.00                |
 | Input Trim       |   1.500               |
 | .                                        |
-| Level            | -12.0 dB              |
+| Level            | -20.0 dB              |
 
-## 🟠 **Amp:** Carvin - USA Rythm 2 _(FW: 22.00)_
+## 🟠 **Amp:** Carvin - USA Rythm 2 _(FW: 22.01)_
 
 | Parameter        | Value                 |
 |------------------|-----------------------|
@@ -33,9 +36,9 @@
 | Depth            |   0.00                |
 | Master           |   5.00                |
 | .                                        |
-| Level            | -12.0 dB              |
+| Level            | -15.0 dB              |
 
-## 🟠 **Chorus:** Stere Tri-Chorus _(FW: 22.00)_
+## 🟠 **Chorus:** Stereo Tri-Chorus _(FW: 22.00)_
 
 | Parameter        | Value                 |
 |------------------|-----------------------|
@@ -92,13 +95,14 @@
 |------------------|-----------------------|
 | Output Level     | 4.00 dB               |
 
-## 🟠 **Looper:** Looper _(FW: 22.00)_
+## 🟠 **Looper:** Looper _(FW: 22.01)_
 
 | Parameter        | Value                 |
 |------------------|-----------------------|
 | Playback         | -6.00 dB              |
 | Overdub          | -6.00 dB              |
 | Record Threshold | -40.0 dB              |
+| Crossfade        | On                    |
 | Loop Quantize    | On                    |
 | Record 2nd Press | Play                  |
 
@@ -212,19 +216,19 @@
 
 |   | Channel Preset                | Level    |
 |---|-------------------------------|----------|
-| A | Carvin - Usa Rythm 2          | -12.0 dB |
-| B | Carvin - Usa Rythm 2          | -12.0 dB |
-| C | Carvin - Usa Rythm 2          | -12.0 dB |
-| D | Carvin - Usa Rythm 2          | -12.0 dB |
+| A | Carvin - Usa Rythm 2          | -15.0 dB |
+| B | Carvin - Usa Rythm 2          | -15.0 dB |
+| C | Carvin - Usa Rythm 2          | -15.0 dB |
+| D | Carvin - Usa Rythm 2          | -15.0 dB |
 
-## 🔴 **Amp:** Carvin - Lead _(FW: 22.00)_
+## 🔴 **Amp:** Carvin - Lead _(FW: 22.01)_
 
 |   | Channel Preset                | Level    |
 |---|-------------------------------|----------|
-| A | Carvin - Recto1 Orange Normal | -12.0 dB |
-| B | Carvin - Recto1 Orange Normal | -12.0 dB |
-| C | Carvin - Recto1 Orange Normal | -12.0 dB |
-| D | Carvin - Recto1 Orange Normal | -12.0 dB |
+| A | Carvin - Recto1 Orange Normal | -20.0 dB |
+| B | Carvin - Recto1 Orange Normal | -20.0 dB |
+| C | Carvin - Recto1 Orange Normal | -20.0 dB |
+| D | Carvin - Recto1 Orange Normal | -20.0 dB |
 
 ## 🔴 **Mixer:** Blend 2+3+4 _(FW: 22.00)_
 
@@ -339,9 +343,9 @@
 | Row | Column 1  | Column 2  | Column 3  | Column 4  | Column 5  |
 |-----|-----------|-----------|-----------|-----------|-----------|
 | 1   | Lead:     |           |           |           |           |
-|     | Gain      | Depth     | Master    | Metronome | Tempo     |
+|     | Gain      | Depth     | Master    | Tempo     | Metronome |
 | 2   | Clean:    |           |           |           |           |
-|     | Gain      |           | Master    | Looper    | Freezer   |
+|     | Gain      |           | Master    | Freezer   | Looper    |
 
 # 🟢 Layouts
 
