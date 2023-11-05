@@ -288,7 +288,7 @@
 
 # 🔵 Presets
 
-## 🔵 Carvin 2.0 _(FW: 22.00)_
+## 🔵 Carvin 2.1 _(FW: 22.01)_
 
 ![Carvin 2.0](Carvin%202.0.png)
 
@@ -327,15 +327,14 @@
 | 7     | Sewll+  |
 |       |         |
 
-### Perform
+### Preset Performance Controls
 
-|       |     |       |          |
-|-------|-----|-------|----------|
-|   .   |  .  |   .   |     .    |
-|   .   |  .  | Delay | Ambience |
-|   .   |  .  |   .   |     .    |
-|   .   |  .  |   .   |     .    |
-|   .   |  .  |   .   |     .    |
+| Row | Column 1  | Column 2  | Column 3  | Column 4  | Column 5  |
+|-----|-----------|-----------|-----------|-----------|-----------|
+| 1   | Lead:     |           |           |           |           |
+|     | Bass      | Mid       | Lo Treble | Hi Treble | Presence  |
+| 2   | Clean:    |           | Delay:    |           |           |
+|     | Reverb    |           | Short     | Medium    | Long      |
 
 
 ## 🟤 Global Performance Controls
@@ -345,7 +344,7 @@
 | 1   | Lead:     |           |           |           |           |
 |     | Gain      | Depth     | Master    | Tempo     | Metronome |
 | 2   | Clean:    |           |           |           |           |
-|     | Gain      |           | Master    | Freezer   | Looper    |
+|     | Gain      | Depth     | Master    | Freezer   | Looper    |
 
 # 🟢 Layouts
 
