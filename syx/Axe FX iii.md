@@ -1,5 +1,5 @@
-# Version 2
-# October 11th 2023
+# Version 2.1
+# November 5th 2023
 
 # 🟠 Channels
 
