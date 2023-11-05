@@ -290,7 +290,7 @@
 
 ## 🔵 Carvin 2.1 _(FW: 22.01)_
 
-![Carvin 2.0](Carvin%202.0.png)
+![Carvin 2.0](Carvin%202.1.png)
 
 ### Scenes
 
@@ -303,12 +303,12 @@
 | AMP 2 | Carvin - Clean | A | A | A |   | C | C | C |   |
 | MIX 1 | Blend 2+3+4    | A | A | A |   | C | C | C |   |
 | VOL 1 | Lead           | A | A | A |   | C | C | C |   |
-| PIT 1 | Lead           |   | A | A |   |   | C | C |   |
+| PIT 1 | Lead           |   | A |   |   |   | C | C |   |
 | DLY 1 | Lead           |   |   | A |   |   |   | C |   |
 | MTD 1 | Lead A (9S31)  | A | B | B |   | C | D | D |   |
 | MTD 2 | Lead B (9S31)  | A | B | B |   | C | D | D |   |
 | VOL 2 | Clean          | A | A | A |   | C | C | C |   |
-| CHO 2 | Clean          |   | A | A |   |   | C | C |   |
+| CHO 2 | Clean          |   | A |   |   |   | C | C |   |
 | FLG 2 | Clean          | A | A | A |   | C | C | C |   |
 | PLX 1 | Clean          | A | A |   |   | C | C |   |   |
 | PLX 2 | Swell          |   |   | A |   |   |   | C |   |
