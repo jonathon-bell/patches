@@ -1,4 +1,4 @@
-//****************** Copyright © 2016-2023 Jonathon Bell. All rights reserved.
+//****************** Copyright © 2016-2025 Jonathon Bell. All rights reserved.
 //*
 //*
 //*  Version : $Header:$
@@ -43,7 +43,7 @@
 /**
  * Sets the parameters of the noise gate in an amplifier model.
  */
-#define Gate(threshold, attack, old, decay)                                 \
+#define Gate(threshold, attack, hold, decay)                                \
                                                                             \
   NGTH := threshold,                                                        \
   NGAT := attack,                                                           \
