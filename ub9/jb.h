@@ -119,7 +119,7 @@
 
 //****************************************************************************
 
-#define JB_Clean(GN,model,...)                                              \
+#define JB_Clean(GN, model,...)                                             \
                                                                             \
   Amp[Flanger] ("JB Clean  "#GN, Knobs(GAIN, MSTR, DLVL),                   \
                                                                             \
@@ -137,7 +137,7 @@
 
 //****************************************************************************
 
-#define JB_Lead(GN,model,...)                                               \
+#define JB_Lead(GN, model,...)                                              \
                                                                             \
   Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL), FastGate,         \
                                                                             \
@@ -158,10 +158,10 @@
 // Variations
 //****************************************************************************
 
-#define SlowGate     Gate(1.2,  60,  0.02, 6)
+#define SlowGate     Gate(1.2,  60, 0.02, 6)
 #define FastGate     Gate(0.2,   4, 150, 75)
-#define SmallHall    Hall(3.5,  90, 8, 85, 0.9, 20, 9.0e3)
-#define LargeHall    Hall(4.0, 150, 10, 100, 0.8,20, 5.6e3)
+#define SmallHall    Hall(3.5,  90,  8,  85, 0.9, 20, 9.0e3)
+#define LargeHall    Hall(4.0, 150, 10, 100, 0.8, 20, 5.6e3)
 #define LightFlange  MDT :=  4.0, FREQ := 2.0, DPTH := 10
 #define HeavyFlange  MDT := 11.8, FREQ := 0.5, DPTH := 57
 
