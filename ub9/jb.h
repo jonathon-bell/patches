@@ -22,8 +22,8 @@
                                                                             \
   Reverb+Flanger ("JB Chorus  "#N, Knobs(FREQ, DPTH, BAL),                  \
                                                                             \
-  SmallHall,                                                                \
-  LightFlange,                                                              \
+  small_hall,                                                               \
+  light_flange,                                                             \
                                                                             \
   WAVE :=  Sine,                                                            \
   FB   :=   0.0,                                                            \
@@ -38,7 +38,7 @@
                                                                             \
   Reverb>Chorus ("JB Reverb  "#N, Knobs(RT, BAL, MIX),                      \
                                                                             \
-  SmallHall,                                                                \
+  small_hall,                                                               \
                                                                             \
   MDT  :=  60.0,                                                            \
   FREQ :=   1.7,                                                            \
@@ -139,7 +139,7 @@
 
 #define JB_Lead(GN, model,...)                                              \
                                                                             \
-  Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL), FastGate,         \
+  Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL), fast_gate,        \
                                                                             \
   AMP  := model,                                                            \
   FLDT := 1.1,                                                              \
@@ -158,11 +158,11 @@
 // Variations
 //****************************************************************************
 
-#define SlowGate     Gate(1.2,  60, 0.02, 6)
-#define FastGate     Gate(0.2,   4, 150, 75)
-#define SmallHall    Hall(3.5,  90,  8,  85, 0.9, 20, 9.0e3)
-#define LargeHall    Hall(4.0, 150, 10, 100, 0.8, 20, 5.6e3)
-#define LightFlange  MDT :=  4.0, FREQ := 2.0, DPTH := 10
-#define HeavyFlange  MDT := 11.8, FREQ := 0.5, DPTH := 57
+#define slow_gate     Gate(1.2,  60, 0.02, 6)
+#define fast_gate     Gate(0.2,   4, 150, 75)
+#define small_hall    Hall(3.5,  90,  8,  85, 0.9, 20, 9.0e3)
+#define large_hall    Hall(4.0, 150, 10, 100, 0.8, 20, 5.6e3)
+#define light_flange  MDT :=  4.0, FREQ := 2.0, DPTH := 10
+#define heavy_flange  MDT := 11.8, FREQ := 0.5, DPTH := 57
 
 //****************************************************************************
