@@ -22,8 +22,8 @@
                                                                             \
   Reverb+Flanger ("JB Chorus  "#N, Knobs(FREQ, DPTH, BAL),                  \
                                                                             \
-  SmallHall,                                                                \
-  LightFlange,                                                              \
+  small_hall,                                                               \
+  light_flange,                                                             \
                                                                             \
   WAVE :=  Sine,                                                            \
   FB   :=   0.0,                                                            \
@@ -38,7 +38,7 @@
                                                                             \
   Reverb>Chorus ("JB Reverb  "#N, Knobs(RT, BAL, MIX),                      \
                                                                             \
-  SmallHall,                                                                \
+  small_hall,                                                               \
                                                                             \
   MDT  :=  60.0,                                                            \
   FREQ :=   1.7,                                                            \
@@ -54,11 +54,14 @@
 
 #define MS_Chorus(N,...)                                                    \
                                                                             \
-  Delay[11111111] ("MS Chorus  "#N, Knobs(DLVL, NONE, NONE), ELVL:=10, DLVL:=0,\
+  Delay[11111111] ("MS Chorus  "#N, Knobs(DLVL, NONE, NONE),                \
                                                                             \
-  Voice(1, 14.0,0.0,4.0,3.0,-10.0, 8.0),                                    \
-  Voice(2, 26.0,0.0,4.7,3.0,+10.0,10.0),                                    \
-  Voice(3,500.0,2.0,0.0,0.0,  0.0, 3.5),                                    \
+  ELVL := 10,                                                               \
+  DLVL :=  0,                                                               \
+                                                                            \
+  Voice(1,  14.0, 0.0, 4.0, 3.0, -10.0,  8.0),                              \
+  Voice(2,  26.0, 0.0, 4.7, 3.0, +10.0, 10.0),                              \
+  Voice(3, 500.0, 2.0, 0.0, 0.0,   0.0,  3.5),                              \
                                                                             \
   __VA_ARGS__)
 
@@ -70,14 +73,14 @@
                                                                             \
   Filter[Dynamic] ("JB Smooth "#N, Knobs(SENS, RESO, MIX),                  \
                                                                             \
-  TYPE:=BandPass,                                                           \
-  DCY :=99,                                                                 \
-  DIR :=Up,                                                                 \
-  SENS:=30,                                                                 \
-  OFST:=1,                                                                  \
-  RESO:=1,                                                                  \
-  LEVL:=100,                                                                \
-  MIX :=80,                                                                 \
+  TYPE := BandPass,                                                         \
+  DCY  := 99,                                                               \
+  DIR  := Up,                                                               \
+  SENS := 30,                                                               \
+  OFST := 1,                                                                \
+  RESO := 1,                                                                \
+  LEVL := 100,                                                              \
+  MIX  := 80,                                                               \
                                                                             \
   __VA_ARGS__)
 
@@ -97,10 +100,13 @@
 
 #define JB_Shimmer_1(...)                                                   \
                                                                             \
-  Pitch[2] ("JB Shimmer 1", Knobs(PIT2, LVL2, MIX), MODE:=10, MIX:=20.0,    \
+  Pitch[2] ("JB Shimmer 1", Knobs(PIT2, LVL2, MIX),                         \
                                                                             \
-  PitchShift(1,12,0,100.0,-10.0,0.0,100),                                   \
-  PitchShift(2,19,0,  0.0,  0.0,0.0, 70),                                   \
+  MODE := 10,                                                               \
+  MIX  := 20.0,                                                             \
+                                                                            \
+  PitchShift(1, 12, 0, 100.0, -10.0, 0.0, 100),                             \
+  PitchShift(2, 19, 0,   0.0,   0.0, 0.0,  70),                             \
                                                                             \
   __VA_ARGS__)
 
@@ -108,7 +114,10 @@
 
 #define JB_Shimmer_2(...)                                                   \
                                                                             \
-  Pitch[1] ("JB Shimmer 2", Knobs(DT, FB, MIX), MODE:=10, MIX:=8.0,         \
+  Pitch[1] ("JB Shimmer 2", Knobs(DT, FB, MIX),                             \
+                                                                            \
+  MODE := 10,                                                               \
+  MIX  := 8.0,                                                              \
                                                                             \
   PIT  :=  12,                                                              \
   FINE :=   0,                                                              \
@@ -119,7 +128,7 @@
 
 //****************************************************************************
 
-#define JB_Clean(GN,model,...)                                              \
+#define JB_Clean(GN, model,...)                                             \
                                                                             \
   Amp[Flanger] ("JB Clean  "#GN, Knobs(GAIN, MSTR, DLVL),                   \
                                                                             \
@@ -137,9 +146,11 @@
 
 //****************************************************************************
 
-#define JB_Lead(GN,model,...)                                               \
+#define JB_Lead(GN, model,...)                                              \
                                                                             \
-  Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL), FastGate,         \
+  Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL),                   \
+                                                                            \
+  fast_gate,                                                                \
                                                                             \
   AMP  := model,                                                            \
   FLDT := 1.1,                                                              \
@@ -158,11 +169,11 @@
 // Variations
 //****************************************************************************
 
-#define SlowGate     Gate(1.2,  60,  0.02, 6)
-#define FastGate     Gate(0.2,   4, 150, 75)
-#define SmallHall    Hall(3.5,  90, 8, 85, 0.9, 20, 9.0e3)
-#define LargeHall    Hall(4.0, 150, 10, 100, 0.8,20, 5.6e3)
-#define LightFlange  MDT :=  4.0, FREQ := 2.0, DPTH := 10
-#define HeavyFlange  MDT := 11.8, FREQ := 0.5, DPTH := 57
+#define slow_gate     Gate(1.2,  60, 0.02, 6)
+#define fast_gate     Gate(0.2,   4, 150, 75)
+#define small_hall    Hall(3.5,  90,  8,  85, 0.9, 20, 9.0e3)
+#define large_hall    Hall(4.0, 150, 10, 100, 0.8, 20, 5.6e3)
+#define light_flange  MDT :=  4.0, FREQ := 2.0, DPTH := 10
+#define heavy_flange  MDT := 11.8, FREQ := 0.5, DPTH := 57
 
 //****************************************************************************
