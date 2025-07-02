@@ -54,11 +54,14 @@
 
 #define MS_Chorus(N,...)                                                    \
                                                                             \
-  Delay[11111111] ("MS Chorus  "#N, Knobs(DLVL, NONE, NONE), ELVL:=10, DLVL:=0,\
+  Delay[11111111] ("MS Chorus  "#N, Knobs(DLVL, NONE, NONE),                \
                                                                             \
-  Voice(1, 14.0,0.0,4.0,3.0,-10.0, 8.0),                                    \
-  Voice(2, 26.0,0.0,4.7,3.0,+10.0,10.0),                                    \
-  Voice(3,500.0,2.0,0.0,0.0,  0.0, 3.5),                                    \
+  ELVL := 10,                                                               \
+  DLVL :=  0,                                                               \
+                                                                            \
+  Voice(1,  14.0, 0.0, 4.0, 3.0, -10.0,  8.0),                              \
+  Voice(2,  26.0, 0.0, 4.7, 3.0, +10.0, 10.0),                              \
+  Voice(3, 500.0, 2.0, 0.0, 0.0,   0.0,  3.5),                              \
                                                                             \
   __VA_ARGS__)
 
@@ -70,14 +73,14 @@
                                                                             \
   Filter[Dynamic] ("JB Smooth "#N, Knobs(SENS, RESO, MIX),                  \
                                                                             \
-  TYPE:=BandPass,                                                           \
-  DCY :=99,                                                                 \
-  DIR :=Up,                                                                 \
-  SENS:=30,                                                                 \
-  OFST:=1,                                                                  \
-  RESO:=1,                                                                  \
-  LEVL:=100,                                                                \
-  MIX :=80,                                                                 \
+  TYPE := BandPass,                                                         \
+  DCY  := 99,                                                               \
+  DIR  := Up,                                                               \
+  SENS := 30,                                                               \
+  OFST := 1,                                                                \
+  RESO := 1,                                                                \
+  LEVL := 100,                                                              \
+  MIX  := 80,                                                               \
                                                                             \
   __VA_ARGS__)
 
@@ -97,10 +100,13 @@
 
 #define JB_Shimmer_1(...)                                                   \
                                                                             \
-  Pitch[2] ("JB Shimmer 1", Knobs(PIT2, LVL2, MIX), MODE:=10, MIX:=20.0,    \
+  Pitch[2] ("JB Shimmer 1", Knobs(PIT2, LVL2, MIX),                         \
                                                                             \
-  PitchShift(1,12,0,100.0,-10.0,0.0,100),                                   \
-  PitchShift(2,19,0,  0.0,  0.0,0.0, 70),                                   \
+  MODE := 10,                                                               \
+  MIX  := 20.0,                                                             \
+                                                                            \
+  PitchShift(1, 12, 0, 100.0, -10.0, 0.0, 100),                             \
+  PitchShift(2, 19, 0,   0.0,   0.0, 0.0,  70),                             \
                                                                             \
   __VA_ARGS__)
 
@@ -108,7 +114,10 @@
 
 #define JB_Shimmer_2(...)                                                   \
                                                                             \
-  Pitch[1] ("JB Shimmer 2", Knobs(DT, FB, MIX), MODE:=10, MIX:=8.0,         \
+  Pitch[1] ("JB Shimmer 2", Knobs(DT, FB, MIX),                             \
+                                                                            \
+  MODE := 10,                                                               \
+  MIX  := 8.0,                                                              \
                                                                             \
   PIT  :=  12,                                                              \
   FINE :=   0,                                                              \
@@ -139,7 +148,9 @@
 
 #define JB_Lead(GN, model,...)                                              \
                                                                             \
-  Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL), fast_gate,        \
+  Amp[Flanger] ("JB Lead   "#GN, Knobs(GAIN, MSTR, DLVL),                   \
+                                                                            \
+  fast_gate,                                                                \
                                                                             \
   AMP  := model,                                                            \
   FLDT := 1.1,                                                              \
